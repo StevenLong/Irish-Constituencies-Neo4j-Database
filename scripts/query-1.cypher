@@ -1,9 +1,7 @@
-// Describe your query
-// at the start
-// in comments.
+// This query returns all female candidates elected in the first count
 
 
-MATCH
-	(n)
-RETURN
-	n;
+MATCH 
+(c:Elected_Candidate{Sex: 'F', elected_in_count:1}) 
+RETURN 
+(c)
